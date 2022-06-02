@@ -1,0 +1,17 @@
+<div class="text-center">
+
+<%= link_to "Recevoir un nouvel email", emails_path, method: :post, class: "btn btn-info", remote: true %>
+
+<div class="text-left row">
+
+    <div class="col-6">
+      <%= render "email_list" %>
+    </div>
+
+    <div class="col-6" id="show-email">
+        
+    </div>
+
+</div>
+
+</div>

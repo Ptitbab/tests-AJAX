@@ -1,0 +1,46 @@
+current directory: /Users/brianvariengien/Desktop/THP/last/todolist-app-master/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+/Users/brianvariengien/.rvm/rubies/ruby-2.5.1/bin/ruby -I /Users/brianvariengien/.rvm/rubies/ruby-2.5.1/lib/ruby/site_ruby/2.5.0 -r ./siteconf20220602-85505-16wyo23.rb extconf.rb
+creating Makefile
+
+current directory: /Users/brianvariengien/Desktop/THP/last/todolist-app-master/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+
+current directory: /Users/brianvariengien/Desktop/THP/last/todolist-app-master/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+compiling cruby.c
+cruby.c:74:17: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+  id_bindings = rb_intern("bindings");
+                ^~~~~~~~~~~~~~~~~~~~~
+/Users/brianvariengien/.rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/ruby/ruby.h:1755:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+cruby.c:74:17: note: '{' token is here
+  id_bindings = rb_intern("bindings");
+                ^~~~~~~~~~~~~~~~~~~~~
+/Users/brianvariengien/.rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/ruby/ruby.h:1755:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/brianvariengien/.rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/ruby/ruby.h:1740:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+cruby.c:74:17: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+  id_bindings = rb_intern("bindings");
+                ^~~~~~~~~~~~~~~~~~~~~
+/Users/brianvariengien/.rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/ruby/ruby.h:1755:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/brianvariengien/.rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/ruby/ruby.h:1745:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+cruby.c:74:17: note: ')' token is here
+  id_bindings = rb_intern("bindings");
+                ^~~~~~~~~~~~~~~~~~~~~
+/Users/brianvariengien/.rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/ruby/ruby.h:1755:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+2 warnings generated.
+linking shared-object bindex/cruby.bundle
+
+current directory: /Users/brianvariengien/Desktop/THP/last/todolist-app-master/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 cruby.bundle ./.gem.20220602-85505-o73d6y/bindex

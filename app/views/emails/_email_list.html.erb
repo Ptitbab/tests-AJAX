@@ -1,0 +1,9 @@
+<ul id="email-list">
+  <% @emails.each do |email|  %>
+    <li>
+      Object: <%=link_to email_path(email.id), remote: true do %>
+                <%= email.object %> 
+              <% end %>
+    </li>
+    <% end %>
+</ul>
